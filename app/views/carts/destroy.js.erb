@@ -1,0 +1,8 @@
+cart = document.getElementById("cart")
+// after destroy, not show cart.
+// If there is no this sentence, when cart is destroyed, cart is still shown and nothing changes in view
+cart.innerHTML = ""
+
+// this is not working. notice of "Your cart is currently empty" not show
+notice = document.getElementById("notice")
+notice.style.display = "run-in"
