@@ -2,9 +2,9 @@
   <aside id="notice"><%= notice %></aside>
 <% end %>
 <h1>Your Pragmatic Catalog</h1>
-<% if session[:count] > 5 %>
-  <h2>Session counter: <%= session[:count] %></h2>
-<% end %>
+<%# if session[:count] > 5 %>
+<!--  <h2>Session counter: <%#= session[:count] %></h2>-->
+<%# end %>
 <ul class="catalog">
   <% cache @products do %>
     <% @products.each do |product| %>
